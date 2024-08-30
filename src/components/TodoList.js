@@ -1,13 +1,13 @@
 import React from "react";
-import "./todolist.css"
-function TodoList({ list , removeTodo}) {
+import "./todolist.css";
+function TodoList({ list, removeTodo }) {
   return (
-    <div className="todolistdata"> 
-      {list.map((item, index) => {
+    <div className="todolistdata">
+      {list.map((item) => {
         return (
-          <div key={index} className="todolistitem">
-            <span> {item}</span>
-            <button onClick={removeTodo}>Delete</button>
+          <div key={item.id} className="todolistitem">
+            <span> {item.text}</span>
+            <button onClick={() => removeTodo(item.id)}>Delete</button>
           </div>
         );
       })}
