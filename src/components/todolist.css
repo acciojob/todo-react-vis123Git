@@ -1,0 +1,19 @@
+.todolistdata{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        border: 1px solid green;
+
+}
+
+.todolistitem{
+        display: flex;
+        justify-content: space-between;
+        text-align: center; 
+        /* width: 100%; */
+        padding: 10px;
+        /* border: 1px solid slateblue; */
+
+}
